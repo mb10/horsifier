@@ -1,0 +1,13 @@
+{
+  "title": "Horsifier",
+  "name": "horsifier",
+  "version": "0.0.1",
+  "description": "Removes the shame from the web",
+  "main": "index.js",
+  "author": "Slippy",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}
