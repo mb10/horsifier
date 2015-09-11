@@ -19,18 +19,18 @@ var mod = pageMod.PageMod({
 
 function changed(state) {
 	
-  	if (!state.checked) {
-	  	button.badgeColor = "#00AAAA";
-	  	button.badge = "on";
-		mod = pageMod.PageMod({
+	if (!state.checked) {
+  	button.badgeColor = "#00AAAA";
+  	button.badge = "on";
+	  mod = pageMod.PageMod({
 			include: "*",
 			contentScriptFile: "./horsify.js",
 			contentScriptWhen: "ready"
-		});
-	}
-  	else {
-    	button.badgeColor = "#AA00AA";
-    	button.badge = "off";
-  		mod.destroy();
+	  });
+  }
+	else {
+  	button.badgeColor = "#AA00AA";
+  	button.badge = "off";
+		mod.destroy();
   }
 }
